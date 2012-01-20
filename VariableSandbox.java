@@ -6,5 +6,8 @@
 import acm.program.*;
 
 public class VariableSandbox extends ConsoleProgram {
-
+	public void run() {
+		int x;
+		println(x);
+	}
 }
