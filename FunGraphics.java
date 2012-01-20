@@ -27,7 +27,7 @@ public class FunGraphics extends GraphicsProgram {
 		
 		GLabel bigS = new GLabel("S", 10, 70);
 		bigS.setFont("Courier New-36");
-		bigS.setColor(Color.WHITE)
+		bigS.setColor(Color.WHITE);
 		add(bigS);
 	}
 }
