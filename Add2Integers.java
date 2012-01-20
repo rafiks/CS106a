@@ -11,8 +11,10 @@ public class Add2Integers extends ConsoleProgram {
 	public void run() {	
 		println("This program adds two numbers.");
 		int total;
-		int n1 = readInt("Enter n1: ");
-		int n2 = readInt("Enter n2: ");
+		int n1;
+		int n2;
+		n1 = readInt("Enter n1: ");
+		n2 = readInt("Enter n2: ");
 		total = n1 + n2;
 		println("The total is " + total + ".");
 	}
