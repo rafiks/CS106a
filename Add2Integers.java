@@ -14,8 +14,6 @@ public class Add2Integers extends ConsoleProgram {
       int n2 = readInt("Enter n2: ");
       int total = n1 + n2;
       println("The total is " + total + ".");
-      
-      println(-1 % 6);
    }
 }
 
