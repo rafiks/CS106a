@@ -6,7 +6,7 @@
  */
 
 
-/* packages being imported */
+/* Packages being imported */
 import acm.graphics.*;	// Needed for GraphicsProgram
 import acm.program.*;	// Needed for all Programs
 import java.awt.*;		// Needed for Colors
