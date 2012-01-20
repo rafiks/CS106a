@@ -3,6 +3,8 @@
  * A Java program in which we're free to run wild and play around
  * with variables!
  */
-public class VariableSandbox {
+import acm.program.*;
+
+public class VariableSandbox extends ConsoleProgram {
 
 }
