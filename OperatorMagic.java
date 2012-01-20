@@ -9,7 +9,7 @@ public class OperatorMagic extends ConsoleProgram {
 		println("This program computes the average of two integers.");
 		int first = readInt("Enter an integer: ");
 		int second = readInt("Enter an integer: ");
-		int average = first + second / 2;
+		int average = (first + second) / 2;
 		println("The average is " + average + ".");
 	}
 }
