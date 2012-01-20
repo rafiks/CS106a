@@ -12,6 +12,9 @@ import acm.program.*;
 
 public class HelloProgram extends GraphicsProgram {
    public void run() {
-      add( new GLabel( "hello, world", 100, 75 ) );
+	   GLabel label = new GLabel( "hello, world", 100, 75 );
+	   label.setFont("SansSerif-32");
+	   label.setColor(Color.RED);
+	   add(label);
    }
 }
