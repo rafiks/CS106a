@@ -6,6 +6,6 @@ import acm.program.*;
 
 public class OperatorMagic extends ConsoleProgram {
 	public void run() {
-		
+		println(1 - 2 - 3);
 	}
 }
