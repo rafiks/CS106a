@@ -19,5 +19,11 @@ public class FunGraphics extends GraphicsProgram {
 		rect.setFilled(true);
 		rect.setColor(Color.CYAN);
 		add(rect);
+		
+		GOval theOval = new GOval(10, 20, 100, 200);
+		theOval.setFilled(true);
+		theOval.setColor(Color.RED);
+		theOval.setFillColor(Color.GREEN);
+		add(theOval);
 	}
 }
