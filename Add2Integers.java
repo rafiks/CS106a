@@ -8,9 +8,7 @@
 import acm.program.*;
 
 public class Add2Integers extends ConsoleProgram {
-	public void run() {
-		println(-5 / 2);
-		
+	public void run() {	
 		println("This program adds two numbers.");
 		int n1 = readInt("Enter n1: ");
 		int n2 = readInt("Enter n2: ");
