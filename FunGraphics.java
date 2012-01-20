@@ -17,7 +17,7 @@ public class FunGraphics extends GraphicsProgram {
 	public void run() {
 		GRect rect = new GRect(10, 20, 100, 200);
 		rect.setFilled(true);
-		rect.setFillColor(Color.CYAN);
+		rect.setColor(Color.CYAN);
 		add(rect);
 	}
 }
