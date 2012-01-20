@@ -25,7 +25,7 @@ public class FunGraphics extends GraphicsProgram {
 		theOval.setFillColor(Color.GREEN);
 		add(theOval);
 		
-		GLabel bigS = new GLabel("S", 10, 120);
+		GLabel bigS = new GLabel("S", 50, 120);
 		bigS.setFont("Courier New-BOLD-36");
 		bigS.setColor(Color.WHITE);
 		add(bigS);
