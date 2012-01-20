@@ -13,7 +13,6 @@ import java.awt.*;		// Needed for Colors
 
 
 public class FunGraphics extends GraphicsProgram {
-
 	public void run() {
 		GOval theOval = new GOval(10, 20, 100, 200);
 		theOval.setFilled(true);
