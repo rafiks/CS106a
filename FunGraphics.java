@@ -19,14 +19,16 @@ public class FunGraphics extends GraphicsProgram {
 	private static final double OVAL_HEIGHT = 200;
 	
 	public void run() {
+		double x = (getWidth() - OVAL_WIDTH / 2.0) / 2.0;
+		
 		/* Create the background. */
-		GRect rect = new GRect(OVAL_X, OVAL_Y, OVAL_WIDTH, OVAL_HEIGHT);
+		GRect rect = new GRect(x, OVAL_Y, OVAL_WIDTH, OVAL_HEIGHT);
 		rect.setFilled(true);
 		rect.setColor(Color.DARK_GRAY);
 		add(rect);
 		
 		/* Create the foreground oval. */
-		GOval theOval = new GOval(OVAL_X, OVAL_Y, OVAL_WIDTH, OVAL_HEIGHT);
+		GOval theOval = new GOval(x, OVAL_Y, OVAL_WIDTH, OVAL_HEIGHT);
 		theOval.setFilled(true);
 		theOval.setColor(Color.RED);
 		theOval.setFillColor(Color.GREEN);
