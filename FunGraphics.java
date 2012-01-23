@@ -14,7 +14,7 @@ import java.awt.*;		// Needed for Colors
 
 public class FunGraphics extends GraphicsProgram {
 	public void run() {
-		double ovalX = 50;
+		double ovalX = 250;
 		
 		/* Create a background rectangle. */
 		GRect rect = new GRect(ovalX, 20, 100, 200);
