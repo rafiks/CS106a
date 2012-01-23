@@ -6,6 +6,11 @@ import acm.program.*;
 
 public class OperatorMagic extends ConsoleProgram {
 	public void run() {
-
+		int x = 4;
+		int y = 3;
+		
+		int ratio = x / y;
+		
+		println("x / y = " + ratio);
 	}
 }
