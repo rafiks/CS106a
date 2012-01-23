@@ -19,7 +19,7 @@ public class Checkerboard extends GraphicsProgram {
 						                 squareSize, squareSize);
 				
 				square.setFilled(true);
-				if (x + y % 2 == 0) {
+				if ((x + y) % 2 == 0) {
 					square.setColor(Color.ORANGE.darker());
 				} else {
 					square.setColor(Color.WHITE);
