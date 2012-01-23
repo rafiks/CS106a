@@ -12,7 +12,7 @@ public class AverageTwoNumbers extends ConsoleProgram {
 		int n2 = readInt("Enter another integer: ");
 		
 		/* Compute their average. */
-		double average = (double)(n1 + n2) / 2;
+		double average = (n1 + n2) / 2;
 		
 		/* Display the value to the user. */
 		println("The average is " + average);
