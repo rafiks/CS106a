@@ -17,7 +17,7 @@ public class FunGraphics extends GraphicsProgram {
 		GRect rect = new GRect(10, 20, 100, 200);
 		rect.setFilled(true);
 		rect.setColor(Color.DARK_GRAY);
-		add(rec);
+		add(rect);
 		
 		GOval theOval = new GOval(10, 20, 100, 200);
 		theOval.setFilled(true);
