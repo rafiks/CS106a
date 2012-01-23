@@ -4,7 +4,7 @@
  */
 import acm.program.*;
 
-public class OperatorMagic extends ConsoleProgram {
+public class FunWithDivision extends ConsoleProgram {
 	public void run() {
 		int x = 4;
 		int y = 3;
