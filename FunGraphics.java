@@ -18,6 +18,8 @@ public class FunGraphics extends GraphicsProgram {
 	private static final double OVAL_HEIGHT = 200;
 	
 	public void run() {	
+		double x = (getWidth() - OVAL_WIDTH) / 2.0;
+		
 		GRect rect = new GRect(OVAL_X, OVAL_Y, OVAL_WIDTH, OVAL_HEIGHT);
 		rect.setFilled(true);
 		add(rect);
