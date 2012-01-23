@@ -6,8 +6,8 @@ import acm.program.*;
 
 public class FunWithDivision extends ConsoleProgram {
 	public void run() {
-		double x = 4;
-		double y = 3;
+		int x = 4;
+		int y = 3;
 		
 		double ratio = x / y;
 		
