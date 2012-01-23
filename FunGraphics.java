@@ -21,7 +21,7 @@ public class FunGraphics extends GraphicsProgram {
 		add(rect);
 		
 		/* Create the foreground oval. */
-		GOval theOval = new GOval(10, 20, 100, 200);
+		GOval theOval = new GOval(50, 20, 100, 200);
 		theOval.setFilled(true);
 		theOval.setColor(Color.RED);
 		theOval.setFillColor(Color.GREEN);
