@@ -26,8 +26,6 @@ public class Checkerboard extends GraphicsProgram {
 				}
 				
 				add(square);
-				
-				index++;
 			}
 		}
 	}
