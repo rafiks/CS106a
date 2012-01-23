@@ -16,12 +16,12 @@ public class FunGraphics extends GraphicsProgram {
 	public void run() {
 		double ovalX = 100;
 		
-		GRect rect = new GRect(100, 20, 100, 200);
+		GRect rect = new GRect(ovalX, 20, 100, 200);
 		rect.setFilled(true);
 		add(rect);
 		
 		/* Create our artistic rendition of the Stanford Oval. */
-		GOval theOval = new GOval(100, 20, 100, 200);
+		GOval theOval = new GOval(ovalX, 20, 100, 200);
 		theOval.setFilled(true);
 		theOval.setColor(Color.RED);
 		theOval.setFillColor(Color.GREEN);
