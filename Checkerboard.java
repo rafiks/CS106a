@@ -8,5 +8,7 @@ import acm.graphics.*;
 import java.awt.*;
 
 public class Checkerboard extends GraphicsProgram {
-	
+	public void run() {
+		
+	}
 }
