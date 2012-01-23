@@ -9,7 +9,7 @@ public class FunWithDivision extends ConsoleProgram {
 		int x = 5;
 		int y = 3;
 		
-		double ratio = (double)x / y;
+		double ratio = (int)((double)x / y);
 		
 		println("x / y = " + ratio);
 	}
