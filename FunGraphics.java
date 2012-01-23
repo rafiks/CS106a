@@ -13,20 +13,15 @@ import java.awt.*;		// Needed for Colors
 
 
 public class FunGraphics extends GraphicsProgram {
-	private static final int OVAL_X = 100;
-	private static final int OVAL_Y = 20;
-	private static final int OVAL_WIDTH = 100;
-	private static final int OVAL_HEIGHT = 200;
-	
 	public void run() {
 		/* Create the background. */
-		GRect rect = new GRect(OVAL_X, OVAL_Y, OVAL_WIDTH, OVAL_HEIGHT);
+		GRect rect = new GRect(10, 20, 100, 200);
 		rect.setFilled(true);
 		rect.setColor(Color.DARK_GRAY);
 		add(rect);
 		
 		/* Create the foreground oval. */
-		GOval theOval = new GOval(OVAL_X, OVAL_Y, OVAL_WIDTH, OVAL_HEIGHT);
+		GOval theOval = new GOval(10, 20, 100, 200);
 		theOval.setFilled(true);
 		theOval.setColor(Color.RED);
 		theOval.setFillColor(Color.GREEN);
