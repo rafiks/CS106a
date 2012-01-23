@@ -15,6 +15,8 @@ import java.awt.*;		// Needed for Colors
 public class FunGraphics extends GraphicsProgram {
 	public void run() {
 		GRect rect = new GRect(10, 20, 100, 200);
+		rect.setFilled(true);
+		add(rect);
 		
 		/* Create our artistic rendition of the Stanford Oval. */
 		GOval theOval = new GOval(10, 20, 100, 200);
