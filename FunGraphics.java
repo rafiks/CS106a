@@ -19,7 +19,7 @@ public class FunGraphics extends GraphicsProgram {
 	private static final double OVAL_HEIGHT = 200;
 	
 	public void run() {
-		double x = (getWidth() - OVAL_WIDTH / 2.0) / 2.0;
+		double x = (getWidth() - OVAL_WIDTH) / 2.0;
 		
 		/* Create the background. */
 		GRect rect = new GRect(x, OVAL_Y, OVAL_WIDTH, OVAL_HEIGHT);
