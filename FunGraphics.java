@@ -13,7 +13,7 @@ import java.awt.*;		// Needed for Colors
 
 
 public class FunGraphics extends GraphicsProgram {
-	private static final int OVAL_X = 300;
+	private static final double OVAL_X = 300;
 	
 	public void run() {	
 		GRect rect = new GRect(OVAL_X, 20, 100, 200);
