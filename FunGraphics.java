@@ -16,15 +16,15 @@ public class FunGraphics extends GraphicsProgram {
 	private static final double OVAL_X = 300;
 	private static final double OVAL_Y = 20;
 	private static final double OVAL_WIDTH = 100;
-	private static final double OVAL_HEIGTH = 200;
+	private static final double OVAL_HEIGHT = 200;
 	
 	public void run() {	
-		GRect rect = new GRect(OVAL_X, OVAL_Y, 100, 200);
+		GRect rect = new GRect(OVAL_X, OVAL_Y, OVAL_WIDTH, OVAL_HEIGHT);
 		rect.setFilled(true);
 		add(rect);
 		
 		/* Create our artistic rendition of the Stanford Oval. */
-		GOval theOval = new GOval(OVAL_X, OVAL_Y, 100, 200);
+		GOval theOval = new GOval(OVAL_X, OVAL_Y, OVAL_WIDTH, OVAL_HEIGHT);
 		theOval.setFilled(true);
 		theOval.setColor(Color.RED);
 		theOval.setFillColor(Color.GREEN);
