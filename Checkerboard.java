@@ -5,6 +5,7 @@
  */
 import acm.program.*;
 import acm.graphics.*;
+import java.awt.*;
 
 public class Checkerboard extends GraphicsProgram {
 	private static final int NUM_SQUARES = 8;
