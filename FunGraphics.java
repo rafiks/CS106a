@@ -14,7 +14,7 @@ import java.awt.*;		// Needed for Colors
 
 public class FunGraphics extends GraphicsProgram {
 	public void run() {
-		double xCoord = (getWidth() - 200) / 2.0;
+		double xCoord = (getWidth() - 100) / 2.0;
 		
 		/* Create the foreground oval. */
 		GOval theOval = new GOval(xCoord, 20, 100, 200);
