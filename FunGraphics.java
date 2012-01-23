@@ -14,14 +14,16 @@ import java.awt.*;		// Needed for Colors
 
 public class FunGraphics extends GraphicsProgram {
 	public void run() {
+		double ovalX = 50;
+		
 		/* Create a background rectangle. */
-		GRect rect = new GRect(50, 20, 100, 200);
+		GRect rect = new GRect(ovalX, 20, 100, 200);
 		rect.setFilled(true);
 		rect.setColor(Color.ORANGE);
 		add(rect);
 		
 		/* Create the foreground oval. */
-		GOval theOval = new GOval(50, 20, 100, 200);
+		GOval theOval = new GOval(ovalX, 20, 100, 200);
 		theOval.setFilled(true);
 		theOval.setColor(Color.RED);
 		theOval.setFillColor(Color.GREEN);
