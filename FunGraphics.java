@@ -13,7 +13,7 @@ import java.awt.*;		// Needed for Colors
 
 
 public class FunGraphics extends GraphicsProgram {
-	private static final int OVAL_X = 10;
+	private static final int OVAL_X = 100;
 	private static final int OVAL_Y = 20;
 	private static final int OVAL_WIDTH = 100;
 	private static final int OVAL_HEIGHT = 200;
