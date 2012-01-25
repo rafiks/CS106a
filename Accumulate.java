@@ -7,6 +7,9 @@
 import acm.program.*;
 
 public class Accumulate extends ConsoleProgram {
+	/* The "sentinel" value meaning that we're done. */
+	private static final int SENTINEL = -1;
+	
 	public void run() {
 		/* Track the total so far. */
 		int total = 0;
@@ -14,9 +17,15 @@ public class Accumulate extends ConsoleProgram {
 		/* Continuously add new values into the total. */
 		while (true) {
 			int toAdd = readInt("Enter next integer: ");
-			total += toAdd;
 			
-			println("The total so far is " + total);
+			/* If the sentinel was read, we're done. */
+			if (toAdd == SENTINEL)
+				break;
+			
+			total += toAdd;
 		}
+		
+		
+		println("The total was " + total);
 	}
 }
