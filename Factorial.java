@@ -9,7 +9,7 @@ public class Factorial extends ConsoleProgram {
 	
 	private int factorial(int num) {
 		int result = 1;
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= num; i++) {
 			result *= i;
 		}
 		return result;
