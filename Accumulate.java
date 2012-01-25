@@ -25,7 +25,6 @@ public class Accumulate extends ConsoleProgram {
 			total += toAdd;
 		}
 		
-		
 		println("The total was " + total);
 	}
 }
