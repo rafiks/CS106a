@@ -30,9 +30,9 @@ public class SeeingStars extends GraphicsProgram {
 			
 			/* Construct a line between those points. */
 			GLine line = new GLine(STAR_CENTER_X + STAR_RADIUS * Math.cos(theta),
-					               STAR_CENTER_Y + STAR_RADIUS * Math.sin(theta),
+					               STAR_CENTER_Y - STAR_RADIUS * Math.sin(theta),
 					               STAR_CENTER_X + STAR_RADIUS * Math.cos(nextTheta),
-					               STAR_CENTER_Y + STAR_RADIUS * Math.sin(nextTheta));
+					               STAR_CENTER_Y - STAR_RADIUS * Math.sin(nextTheta));
 			
 			/* Update the line color. */
 			line.setColor(Color.BLUE);
