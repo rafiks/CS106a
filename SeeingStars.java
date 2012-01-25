@@ -28,6 +28,8 @@ public class SeeingStars extends GraphicsProgram {
 					               STAR_CENTER_X + STAR_RADIUS * Math.cos(nextTheta),
 								   STAR_CENTER_Y + STAR_RADIUS * Math.sin(nextTheta));
 			
+			line.setColor(Color.BLUE);
+			add(line);			
 		}
 	}
 	
