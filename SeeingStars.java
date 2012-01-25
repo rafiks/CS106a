@@ -22,11 +22,11 @@ public class SeeingStars extends GraphicsProgram {
 	/* Constant controlling how many points the star has. */
 	private static final int NUM_STAR_POINTS = 5;
 	
-	private void drawStar(double x, double y) {
+	private void drawStar(double x, double y, int numSides) {
 		for (int i = 0; i < NUM_STAR_POINTS; i++) {
 			/* Compute the angles of the current point and the next point. */
-			double theta     =      i  * 2 * Math.PI / NUM_STAR_POINTS;
-			double nextTheta = (i + 2) * 2 * Math.PI / NUM_STAR_POINTS;
+			double theta     =      i  * 2 * Math.PI / numSides;
+			double nextTheta = (i + 2) * 2 * Math.PI / numSides;
 			
 			/* Construct a line between those points. */
 			GLine line = new GLine(x + STAR_RADIUS * Math.cos(theta),
