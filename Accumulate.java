@@ -11,6 +11,8 @@ public class Accumulate extends ConsoleProgram {
 	private static final int SENTINEL = 0;
 	
 	public void run() {
+		println("I'm nice.  If you want to leave, type in " + SENTINEL);
+		
 		/* Track the total so far. */
 		int total = 0;
 		
