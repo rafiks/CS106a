@@ -20,7 +20,7 @@ public class SeeingStars extends GraphicsProgram {
 	private static final double STAR_RADIUS = 100;
 	
 	/* Constant controlling how many points the star has. */
-	private static final int NUM_STAR_POINTS = 9;
+	private static final int NUM_STAR_POINTS = 111;
 	
 	public void run() {
 		for (int i = 0; i < NUM_STAR_POINTS; i++) {
