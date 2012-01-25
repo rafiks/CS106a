@@ -22,25 +22,17 @@ public class SeeingStars extends GraphicsProgram {
 	/* Constant controlling how many points the star has. */
 	private static final int NUM_STAR_POINTS = 5;
 	
-	/**
-	 * Draws a star with the given radius and number of points at the indicated location.
-	 * 
-	 * @param x The x coordinate of the center of the star.
-	 * @param y The y coordinate of the center of the star.
-	 * @param radius The radius of the star.
-	 * @param numPoints The number of points in the star.
-	 */
-	private void drawStar(double x, double y, double radius, int numPoints) {
-		for (int i = 0; i < numPoints; i++) {
+	public void run() {
+		for (int i = 0; i < NUM_STAR_POINTS; i++) {
 			/* Compute the angles of the current point and the next point. */
-			double theta     =      i  * 2 * Math.PI / numPoints;
-			double nextTheta = (i + 2) * 2 * Math.PI / numPoints;
+			double theta     =      i  * 2 * Math.PI / NUM_STAR_POINTS;
+			double nextTheta = (i + 2) * 2 * Math.PI / NUM_STAR_POINTS;
 			
 			/* Construct a line between those points. */
-			GLine line = new GLine(x + radius * Math.cos(theta),
-					               y + radius * Math.sin(theta),
-					               x + radius * Math.cos(nextTheta),
-					               y + radius * Math.sin(nextTheta));
+			GLine line = new GLine(STAR_CENTER_X + STAR_RADIUS * Math.cos(theta),
+					               STAR_CENTER_Y + STAR_RADIUS * Math.sin(theta),
+					               STAR_CENTER_X + STAR_RADIUS * Math.cos(nextTheta),
+					               STAR_CENTER_Y + STAR_RADIUS * Math.sin(nextTheta));
 			
 			/* Update the line color. */
 			line.setColor(Color.BLUE);
@@ -48,10 +40,5 @@ public class SeeingStars extends GraphicsProgram {
 			/* Display the line. */
 			add(line);			
 		}
-	}
-	
-	public void run() {
-		drawStar(STAR_CENTER_X, STAR_CENTER_Y, STAR_RADIUS, NUM_STAR_POINTS);
-		drawStar(SECOND_STAR_CENTER_X, SECOND_STAR_CENTER_Y, STAR_RADIUS / 4, NUM_STAR_POINTS + 2);
 	}
 }
