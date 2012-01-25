@@ -17,6 +17,10 @@ public class Accumulate extends ConsoleProgram {
 		/* Continuously add new values into the total. */
 		while (true) {
 			int toAdd = readInt("Enter next integer: ");	
+			if (toAdd == SENTINEL) {
+				break;
+			}
+			
 			total += toAdd;
 			
 			println("The total so far is " + total);	
