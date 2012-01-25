@@ -6,11 +6,17 @@
 import acm.program.*;
 
 public class Factorial extends ConsoleProgram {
-	public void run() {
+	
+	private int factorial(int num) {
 		int result = 1;
 		for (int i = 1; i <= 10; i++) {
 			result *= i;
 		}
+		return result;
+	}
+	
+	public void run() {
+		
 		
 		println("10! = " + result);
 	}
