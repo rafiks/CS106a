@@ -22,6 +22,14 @@ public class SeeingStars extends GraphicsProgram {
 	/* Constant controlling how many points the star has. */
 	private static final int NUM_STAR_POINTS = 5;
 	
+	/**
+	 * Draws a star with the given radius and number of points at the indicated location.
+	 * 
+	 * @param x The x coordinate of the center of the star.
+	 * @param y The y coordinate of the center of the star.
+	 * @param radius The radius of the star.
+	 * @param numPoints The number of points in the star.
+	 */
 	private void drawStar(double x, double y, double radius, int numPoints) {
 		for (int i = 0; i < numPoints; i++) {
 			/* Compute the angles of the current point and the next point. */
