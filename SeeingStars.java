@@ -12,6 +12,10 @@ public class SeeingStars extends GraphicsProgram {
 	private static final double STAR_CENTER_X = 200;
 	private static final double STAR_CENTER_Y = 200;
 	
+	/* Constants controlling the location of the star. */
+	private static final double SECOND_STAR_CENTER_X = 200;
+	private static final double SECOND_STAR_CENTER_Y = 200;
+	
 	/* Constant controlling the radius of the star. */
 	private static final double STAR_RADIUS = 100;
 	
@@ -29,6 +33,24 @@ public class SeeingStars extends GraphicsProgram {
 					               STAR_CENTER_Y + STAR_RADIUS * Math.sin(theta),
 					               STAR_CENTER_X + STAR_RADIUS * Math.cos(nextTheta),
 								   STAR_CENTER_Y + STAR_RADIUS * Math.sin(nextTheta));
+			
+			/* Update the line color. */
+			line.setColor(Color.BLUE);
+			
+			/* Display the line. */
+			add(line);			
+		}
+		
+		for (int i = 0; i < NUM_STAR_POINTS; i++) {
+			/* Compute the angles of the current point and the next point. */
+			double theta     =      i  * 2 * Math.PI / NUM_STAR_POINTS;
+			double nextTheta = (i + 2) * 2 * Math.PI / NUM_STAR_POINTS;
+			
+			/* Construct a line between those points. */
+			GLine line = new GLine(SECOND_STAR_CENTER_X + STAR_RADIUS * Math.cos(theta),
+					               SECOND_STAR_CENTER_Y + STAR_RADIUS * Math.sin(theta),
+					               SECOND_STAR_CENTER_X + STAR_RADIUS * Math.cos(nextTheta),
+					               SECOND_STAR_CENTER_Y + STAR_RADIUS * Math.sin(nextTheta));
 			
 			/* Update the line color. */
 			line.setColor(Color.BLUE);
