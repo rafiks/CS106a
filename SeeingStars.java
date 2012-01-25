@@ -13,7 +13,7 @@ public class SeeingStars extends GraphicsProgram {
 	private static final double STAR_CENTER_Y = 200;
 	
 	/* Constants controlling the location of the star. */
-	private static final double SECOND_STAR_CENTER_X = 400;
+	private static final double SECOND_STAR_CENTER_X = 450;
 	private static final double SECOND_STAR_CENTER_Y = 200;
 	
 	/* Constant controlling the radius of the star. */
