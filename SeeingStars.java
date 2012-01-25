@@ -41,5 +41,4 @@ public class SeeingStars extends GraphicsProgram {
 			add(line);			
 		}
 	}
-	
 }
