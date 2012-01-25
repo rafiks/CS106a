@@ -26,7 +26,7 @@ public class SeeingStars extends GraphicsProgram {
 		for (int i = 0; i < NUM_STAR_POINTS; i++) {
 			/* Compute the angles of the current point and the next point. */
 			double theta     =      i  * 2 * Math.PI / NUM_STAR_POINTS;
-			double nextTheta = (i + 10) * 2 * Math.PI / NUM_STAR_POINTS;
+			double nextTheta = (i + 20) * 2 * Math.PI / NUM_STAR_POINTS;
 			
 			/* Construct a line between those points. */
 			GLine line = new GLine(STAR_CENTER_X + STAR_RADIUS * Math.cos(theta),
