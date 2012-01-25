@@ -17,7 +17,7 @@ public class SeeingStars extends GraphicsProgram {
 	private static final double SECOND_STAR_CENTER_Y = 200;
 	
 	/* Constant controlling the radius of the star. */
-	private static final double STAR_RADIUS = 30;
+	private static final double STAR_RADIUS = 100;
 	
 	/* Constant controlling how many points the star has. */
 	private static final int NUM_STAR_POINTS = 5;
