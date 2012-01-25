@@ -8,6 +8,8 @@ import acm.program.*;
 
 public class Accumulate extends ConsoleProgram {
 
+	private static final int SENTINEL = 0;
+	
 	public void run() {
 		/* Track the total so far. */
 		int total = 0;
