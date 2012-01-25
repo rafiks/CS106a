@@ -16,8 +16,6 @@ public class Factorial extends ConsoleProgram {
 	}
 	
 	public void run() {
-		
-		
-		println("10! = " + result);
+		println("10! = " + factorial(10));
 	}
 }
