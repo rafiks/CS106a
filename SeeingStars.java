@@ -20,8 +20,8 @@ public class SeeingStars extends GraphicsProgram {
 	
 	public void run() {
 		for (int i = 0; i < NUM_STAR_POINTS; i++) {
-			double theta     = i * Math.PI / NUM_STAR_POINTS;
-			double nextTheta = (i + 2) * Math.PI / NUM_STAR_POINTS;
+			double theta     = i * 2 * Math.PI / NUM_STAR_POINTS;
+			double nextTheta = (i + 2) * 2 * Math.PI / NUM_STAR_POINTS;
 			
 			GLine line = new GLine(STAR_CENTER_X + STAR_RADIUS * Math.cos(theta),
 					               STAR_CENTER_Y + STAR_RADIUS * Math.sin(theta),
