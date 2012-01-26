@@ -22,7 +22,7 @@ public class SeeingStars extends GraphicsProgram {
 	/* Constant controlling how many points the star has. */
 	private static final int NUM_STAR_POINTS = 5;
 	
-	public void run() {
+	private void drawStar() {
 		for (int i = 0; i < NUM_STAR_POINTS; i++) {
 			/* Compute the angles of the current point and the next point. */
 			double theta     =  i      * 2 * Math.PI / NUM_STAR_POINTS;
@@ -40,5 +40,9 @@ public class SeeingStars extends GraphicsProgram {
 			/* Display the line. */
 			add(line);			
 		}
+	}
+	
+	public void run() {
+		drawStar();
 	}
 }
