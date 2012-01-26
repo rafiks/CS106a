@@ -22,10 +22,6 @@ public class SeeingStars extends GraphicsProgram {
 	/* Constant controlling how many points the star has. */
 	private static final int NUM_STAR_POINTS = 5;
 	
-	private void drawStar(double x, double y) {
-		
-	}
-	
 	public void run() {
 		for (int i = 0; i < NUM_STAR_POINTS; i++) {
 			/* Compute the angles of the current point and the next point. */
