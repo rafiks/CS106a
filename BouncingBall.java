@@ -48,7 +48,7 @@ public class BouncingBall extends GraphicsProgram {
 		double dx = 5;
 		double dy = 0;
 		double gravity = 1.0;
-		double elasticity = 0.6;
+		double elasticity = 0.7;
 		
 		displayParameters(gravity, elasticity);
 		
@@ -56,7 +56,7 @@ public class BouncingBall extends GraphicsProgram {
 			ball.move(dx, dy);
 			
 			if (ballHitGround(ball)) {
-				unstickBall(ball);
+				//unstickBall(ball);
 				dy *= -elasticity;
 			} else {
 				dy += gravity;
