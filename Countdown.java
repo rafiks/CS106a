@@ -7,7 +7,7 @@ import acm.program.*;
 
 public class Countdown extends ConsoleProgram {
 
-	private static final int COUNTDOWN_START = 30;
+	private static final int COUNTDOWN_START = 20;
 	private static final int GUIDANCE_START = 15;
 	private static final int IGNITION_START = 9;
 	
