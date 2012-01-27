@@ -10,9 +10,9 @@ public class Factorial extends ConsoleProgram {
 	private static final int MAX_NUM = 15;
 	
 	public void run() {
-		for (int j = 0; j < MAX_NUM; j++) {
-			int result = factorial(j);
-			println(j + "! = " + result);
+		for (int i = 0; i < MAX_NUM; i++) {
+			int result = factorial(i);
+			println(i + "! = " + result);
 		}
 	}
 	
