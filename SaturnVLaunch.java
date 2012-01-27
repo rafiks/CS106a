@@ -24,6 +24,10 @@ public class SaturnVLaunch extends GraphicsProgram {
 		return ball.getX() < getWidth();
 	}
 	
+	private boolean ballHitGround(GOval ball) {
+		return ball.getY() + ball.getHeight() >= getHeight();
+	}
+	
 	public void run() {
 		GOval ball = createBall();
 		add(ball);
