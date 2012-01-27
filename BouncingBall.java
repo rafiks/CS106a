@@ -38,6 +38,7 @@ public class BouncingBall extends GraphicsProgram {
 		double dx = rgen.nextDouble(1.0, 4.0);
 		double dy = 0;
 		double gravity = rgen.nextDouble(0.3, 2.5);
+		double elasticity = rgen.nextDouble(0.5, 1.1);
 		
 		while (ballOnScreen(ball)) {
 			ball.move(dx, dy);
