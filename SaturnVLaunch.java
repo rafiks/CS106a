@@ -6,6 +6,7 @@
  */
 import acm.program.*;
 import acm.graphics.*;
+
 import java.awt.*;
 
 public class SaturnVLaunch extends GraphicsProgram {
@@ -43,5 +44,25 @@ public class SaturnVLaunch extends GraphicsProgram {
 	
 	private boolean rocketInOrbit(GRect rocket) {
 		return rocket.getY() + rocket.getHeight() < 0;
+	}
+	
+	private void drawStar(double x, double y, double radius, int numPoints) {
+		for (int i = 0; i < numPoints; i++) {
+			/* Compute the angles of the current point and the next point. */
+			double theta     =  i      * 2 * Math.PI / numPoints;
+			double nextTheta = (i + 2) * 2 * Math.PI / numPoints;
+			
+			/* Construct a line between those points. */
+			GLine line = new GLine(x + radius * Math.cos(theta),
+					               y - radius * Math.sin(theta),
+					               x + radius * Math.cos(nextTheta),
+					               y - radius * Math.sin(nextTheta));
+			
+			/* Update the line color. */
+			line.setColor(Color.BLUE);
+			
+			/* Display the line. */
+			add(line);			
+		}
 	}
 }
