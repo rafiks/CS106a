@@ -23,7 +23,7 @@ public class SaturnVLaunch extends GraphicsProgram {
 			dy += 1.0;
 			
 			if (ball.getY() + ball.getHeight() > getHeight()) {
-				ball.move(0, getHeight() - ball.getY() + ball.getHeight());
+				//ball.move(0, getHeight() - ball.getY() + ball.getHeight());
 				dy *= -0.9;
 			}
 			
