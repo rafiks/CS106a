@@ -36,6 +36,6 @@ public class SaturnVLaunch extends GraphicsProgram {
 	}
 	
 	private boolean rocketInOrbit(GRect rocket) {
-		return rocket.getY() < 0;
+		return rocket.getY() + rocket.getHeight() < 0;
 	}
 }
