@@ -32,7 +32,7 @@ public class BouncingBall extends GraphicsProgram {
 			GOval ball = createBall();
 			add(ball);
 			bounceBall(ball);
-			remove(ball);
+			removeAll();
 		}
 	}
 	
