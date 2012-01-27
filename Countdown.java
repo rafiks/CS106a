@@ -13,7 +13,7 @@ public class Countdown extends ConsoleProgram {
 	
 	private static final double ONE_SECOND = 1000;
 	
-	public void run() {
+	public void run() {		
 		/* Do the launch countdown! */
 		for (int i = COUNTDOWN_START; i > 0; i--) {
 			println("T-" + i + " seconds.");
