@@ -12,17 +12,17 @@ import java.awt.*;
 
 public class SaturnVLaunch extends GraphicsProgram {
 	public void run() {
-		GOval ball = new GOval(0, 0, 10, 10);
+		GOval ball = createBall();
 		add(ball);
 		
 		double dx = 3;
 		double dy = 0;
 		
-		while (ball.getX() + ball.getWidth() < getWidth()) {
+		while (ballOnScreen(ball)) {
 			ball.move(dx, dy);
 			dy += 1.0;
 			
-			if (ball.getY() + ball.getHeight() > getHeight()) {
+			if (ballHitGround(ball)) {
 				ball.move(0, getHeight() - (ball.getY() + ball.getHeight()));
 				dy *= -0.8;
 			}
