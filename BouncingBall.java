@@ -39,7 +39,7 @@ public class BouncingBall extends GraphicsProgram {
 	private void displayParameters(double gravity, double elasticity) {
 		GLabel data = new GLabel("Gravity: " + gravity + "; Elasticity: " + elasticity);
 		data.setFont("Monospace-24");
-		data.setLocation(0, -data.getAscent());
+		data.setLocation(0, data.getAscent());
 		add(data);
 	}
 	
