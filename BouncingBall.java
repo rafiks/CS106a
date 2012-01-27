@@ -1,8 +1,7 @@
 /*
- * File: SaturnVLaunch.java
+ * File: BouncingBall.java
  * ========================================================
- * A program that simulates the launch of a Saturn V moon
- * rocket.
+ * A program that simulates a bouncing ball
  */
 import acm.program.*;
 import acm.graphics.*;
