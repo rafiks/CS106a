@@ -22,6 +22,8 @@ public class SaturnVLaunch extends GraphicsProgram {
 	private static final int MIN_STAR_POINTS = 5;
 	private static final int MAX_STAR_POINTS = 15;
 	
+	private static final int NUM_STARS = 10;
+	
 	public void run() {
 		drawBackground();
 		GRect rocket = createRocket();
