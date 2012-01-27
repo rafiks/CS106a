@@ -16,6 +16,12 @@ public class RetireYoung extends ConsoleProgram {
 		println("Now I have $" + accountBalance);
 	}
 	
+	/**
+	 * A method that (allegedly!) makes us have ten million
+	 * dollars!
+	 * 
+	 * @param money Your initial money.
+	 */
 	private void getRichQuick(int money) {
 		/* Now I have ten million dollars! */
 		money = 10000000;
