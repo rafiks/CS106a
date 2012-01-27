@@ -47,8 +47,8 @@ public class BouncingBall extends GraphicsProgram {
 		RandomGenerator rgen = RandomGenerator.getInstance();
 		double dx = 5;
 		double dy = 0;
-		double gravity = rgen.nextDouble(0.3, 1.5);
-		double elasticity = rgen.nextDouble(0, 1.1);
+		double gravity = 1.0;
+		double elasticity = 0.7;
 		
 		displayParameters(gravity, elasticity);
 		
