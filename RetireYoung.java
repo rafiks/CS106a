@@ -12,7 +12,7 @@ public class RetireYoung extends ConsoleProgram {
 		println("I used to have $" + 137);
 		
 		/* Get rich quick with computer science! */
-		getRichQuick(accountBalance);
+		accountBalance = getRichQuick();
 		println("Now I have $" + accountBalance);
 	}
 	
@@ -22,8 +22,8 @@ public class RetireYoung extends ConsoleProgram {
 	 * 
 	 * @param money Your initial money.
 	 */
-	private void getRichQuick(int money) {
+	private int getRichQuick() {
 		/* Now I have ten million dollars! */
-		money = 10000000;
+		return 10000000;
 	}
 }
