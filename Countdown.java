@@ -27,6 +27,8 @@ public class Countdown extends ConsoleProgram {
 			if (i == IGNITION_START) {
 				println("Ignition sequence start.");
 			}
+			
+			pause(1000);
 		}
 		
 		println("All engines running. Lift-off!");
