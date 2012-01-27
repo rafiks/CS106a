@@ -16,8 +16,6 @@ public class Countdown extends ConsoleProgram {
 	/* When the ignition sequence starts. */
 	private static final int IGNITION_START = 9;
 	
-	private static final double ONE_SECOND = 1000;
-	
 	public void run() {		
 		/* Do the launch countdown! */
 		for (int i = COUNTDOWN_START; i > 0; i--) {
@@ -30,8 +28,6 @@ public class Countdown extends ConsoleProgram {
 			if (i == IGNITION_START) {
 				println("Ignition sequence start.");
 			}
-			
-			pause(ONE_SECOND);
 		}
 		
 		println("All engines running. Lift-off!");
