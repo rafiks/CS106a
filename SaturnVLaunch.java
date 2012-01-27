@@ -12,15 +12,18 @@ public class SaturnVLaunch extends GraphicsProgram {
 	private static final double ROCKET_WIDTH = 10;
 	private static final double ROCKET_HEIGHT = 200;
 	
-	private static final double ROCKET_SPEED = -10;
+	private static final double ROCKET_ACCELERATION = -1;
 	private static final double PAUSE_TIME = 1000.0 / 24;
 	
 	public void run() {
 		GRect rocket = createRocket();
 		add(rocket);
 		
+		double dy = 0;
 		while (!rocketInOrbit(rocket)) {
-			rocket.move(0, ROCKET_SPEED);
+			rocket.move(0, dy);
+			dy += ROCKET_ACCELERATION;
+			
 			pause(PAUSE_TIME);
 		}
 	}
