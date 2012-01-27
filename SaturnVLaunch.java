@@ -11,7 +11,7 @@ import acm.util.*;
 import java.awt.*;
 
 public class SaturnVLaunch extends GraphicsProgram {
-	private static final double BALL_RADIUS = 10;
+	private static final double BALL_RADIUS = 50;
 	
 	private GOval createBall() {
 		GOval result = new GOval(0, 0, BALL_RADIUS, BALL_RADIUS);
