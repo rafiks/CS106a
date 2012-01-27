@@ -10,7 +10,6 @@ public class StickFamily extends GraphicsProgram {
 	private static final double HEAD_PROPORTION = 1.0 / 3.0;
 	private static final double LEG_PROPORTION  = 1.0 / 3.0;
 	private static final double ARM_PROPORTION  = 1.0 / 2.0;
-	private static final double LEG_PROPORTION  = 1.0 / 3.0;
 	
 	private void drawStickPerson(double x, double y, double height) {
 		drawStickHead(x, y, height);
