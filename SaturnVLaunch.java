@@ -34,11 +34,14 @@ public class SaturnVLaunch extends GraphicsProgram {
 	private void launchRocket(GRect rocket) {
 		double dy = 0;
 		while (!rocketInOrbit(rocket)) {
-			rocket.move(0, dy);
-			dy += ROCKET_ACCELERATION;
-			
+			moveRocket(rocket, dy);			
 			pause(PAUSE_TIME);
 		}
+	}
+	
+	private void moveRocket(GRect rocket, double dy) {
+		rocket.move(0, dy);
+		dy += ROCKET_ACCELERATION;
 	}
 	
 	private GRect createRocket() {
