@@ -31,7 +31,10 @@ public class SaturnVLaunch extends GraphicsProgram {
 	public void run() {
 		GOval ball = createBall();
 		add(ball);
-		
+		bounceBall(ball);
+	}
+	
+	private void bounceBall(GOval ball) {
 		double dx = 3;
 		double dy = 0;
 		
