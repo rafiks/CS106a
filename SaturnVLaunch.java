@@ -53,7 +53,7 @@ public class SaturnVLaunch extends GraphicsProgram {
 	
 	private boolean rocketInOrbit(GRect rocket) {
 		return rocket.getY() + rocket.getHeight() < 0;
-	} / 
+	}
 	
 	private void drawStar(double x, double y, double radius, int numPoints) {
 		for (int i = 0; i < numPoints; i++) {
