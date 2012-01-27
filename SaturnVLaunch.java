@@ -17,6 +17,8 @@ public class SaturnVLaunch extends GraphicsProgram {
 	private static final double ROCKET_ACCELERATION = -0.1;
 	private static final double PAUSE_TIME = 1000.0 / 24;
 	
+	private static final double STAR_RADIUS = 20;
+	
 	public void run() {
 		drawBackground();
 		GRect rocket = createRocket();
@@ -70,5 +72,13 @@ public class SaturnVLaunch extends GraphicsProgram {
 	
 	private void drawBackground() {
 		RandomGenerator rgen = RandomGenerator.getInstance();
+		for (int i = 0; i < NUM_STARS; i++) {
+			addStar(rgen);
+		}
+	}
+	
+	private void addStar(RandomGenerator rgen) {
+		double x = rgen.nextDouble(STAR_RADIUS / 2, getWidth() - STAR_RADIUS / 2);
+		double y = rgen.nextDouble(STAR_RADIUS / 2, getHeight() / 2 - STAR_RADIUS / 2);
 	}
 }
