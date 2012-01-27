@@ -15,4 +15,9 @@ public class RetireYoung extends ConsoleProgram {
 		getRichQuick(accountBalance);
 		println("Now I have $" + accountBalance);
 	}
+	
+	private void getRichQuick(int money) {
+		/* Now I have ten million dollars! */
+		money = 10000000;
+	}
 }
