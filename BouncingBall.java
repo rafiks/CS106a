@@ -28,9 +28,12 @@ public class BouncingBall extends GraphicsProgram {
 	}
 	
 	public void run() {
-		GOval ball = createBall();
-		add(ball);
-		bounceBall(ball);
+		while (true) {
+			GOval ball = createBall();
+			add(ball);
+			bounceBall(ball);
+			remove(ball);
+		}
 	}
 	
 	private void bounceBall(GOval ball) {
