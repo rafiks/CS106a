@@ -56,7 +56,7 @@ public class BouncingBall extends GraphicsProgram {
 			ball.move(dx, dy);
 			
 			if (ballHitGround(ball)) {
-				unstickBall(ball);
+				//unstickBall(ball);
 				dy *= -elasticity;
 			} else {
 				dy += gravity;
