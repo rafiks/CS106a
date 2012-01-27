@@ -20,6 +20,5 @@ public class Factorial extends ConsoleProgram {
 		for (int i = 1; i <= num; i++) {
 			result *= i;
 		}
-		return result;
 	}
 }
