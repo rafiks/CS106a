@@ -62,7 +62,7 @@ public class BouncingBall extends GraphicsProgram {
 				dy += gravity;
 			}
 			
-			pause(1000.0 / 24);
+			pause(1000.0 / 36);
 		}
 	}
 	
