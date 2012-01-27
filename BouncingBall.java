@@ -36,12 +36,20 @@ public class BouncingBall extends GraphicsProgram {
 		}
 	}
 	
+	private void displayParameters(double gravity, double elasticity) {
+		GLabel data = new GLabel("Gravity: " + gravity + "; Elasticity: " + elasticity);
+		data.setFont("Monospace-24");
+		add(data);
+	}
+	
 	private void bounceBall(GOval ball) {
 		RandomGenerator rgen = RandomGenerator.getInstance();
 		double dx = 5;
 		double dy = 0;
 		double gravity = rgen.nextDouble(0.3, 1.5);
 		double elasticity = rgen.nextDouble(0, -1.1);
+		
+		displayParameters(gravity, elasticity);
 		
 		while (ballOnScreen(ball)) {
 			ball.move(dx, dy);
