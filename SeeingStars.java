@@ -43,7 +43,7 @@ public class SeeingStars extends GraphicsProgram {
 	}
 	
 	public void run() {
-		drawStar();
-		drawStar();
+		drawStar(STAR_CENTER_X, STAR_CENTER_Y);
+		drawStar(SECOND_STAR_CENTER_X, SECOND_STAR_CENTER_Y);
 	}
 }
