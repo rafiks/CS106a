@@ -11,6 +11,19 @@ import acm.util.*;
 import java.awt.*;
 
 public class SaturnVLaunch extends GraphicsProgram {
+	private static final double BALL_RADIUS = 10;
+	
+	private GOval createBall() {
+		GOval result = new GOval(0, 0, BALL_RADIUS, BALL_RADIUS);
+		result.setFilled(true);
+		result.setColor(Color.BLUE);
+		return result;
+	}
+	
+	private boolean ballOnScreen(GOval ball) {
+		return ball.getX() < getWidth();
+	}
+	
 	public void run() {
 		GOval ball = createBall();
 		add(ball);
