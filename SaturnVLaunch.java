@@ -78,7 +78,9 @@ public class SaturnVLaunch extends GraphicsProgram {
 	}
 	
 	private void addStar(RandomGenerator rgen) {
-		double x = rgen.nextDouble(STAR_RADIUS / 2, getWidth() - STAR_RADIUS / 2);
-		double y = rgen.nextDouble(STAR_RADIUS / 2, getHeight() / 2 - STAR_RADIUS / 2);
+		double x = rgen.nextDouble(STAR_RADIUS, getWidth() - STAR_RADIUS);
+		double y = rgen.nextDouble(STAR_RADIUS, getHeight() / 2 - STAR_RADIUS);
+		int numPoints = rgen.nextInt(MIN_STAR_POINTS, MAX_STAR_POINTS);
+		drawStar(x, y, STAR_RADIUS, numPoints);
 	}
 }
