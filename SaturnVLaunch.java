@@ -15,7 +15,7 @@ public class SaturnVLaunch extends GraphicsProgram {
 		GOval ball = new GOval(0, 0, 10, 10);
 		add(ball);
 		
-		double dx = 5;
+		double dx = 3;
 		double dy = 0;
 		
 		while (ball.getX() + ball.getWidth() < getWidth()) {
