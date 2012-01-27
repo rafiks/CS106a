@@ -20,7 +20,7 @@ public class SaturnVLaunch extends GraphicsProgram {
 	private static final double STAR_RADIUS = 10;
 	
 	private static final int MIN_STAR_POINTS = 5;
-	private static final int MAX_STAR_POINTS = 15;
+	private static final int MAX_STAR_POINTS = 9;
 	
 	private static final int NUM_STARS = 10;
 	
