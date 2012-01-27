@@ -54,7 +54,7 @@ public class BouncingBall extends GraphicsProgram {
 		
 		while (ballOnScreen(ball)) {
 			ball.move(dx, dy);
-			dx += rgen.nextDouble(-0.2, 0.1);
+			dx += rgen.nextDouble(-0.3, 0.25);
 			
 			if (ballHitGround(ball)) {
 				unstickBall(ball);
