@@ -7,12 +7,13 @@ import acm.program.*;
 
 public class Factorial extends ConsoleProgram {
 
+	private static final int MAX_NUM = 15;
+	
 	public void run() {
-		int result1 = factorial(10);
-		println("10! = " + result1);
-		
-		int result2 = factorial(13);
-		println("13! = " + result2);
+		for (int j = 0; j < MAX_NUM; j++) {
+			int result = factorial(j);
+			println(j + "! = " + result);
+		}
 	}
 	
 	private int factorial(int num) {
