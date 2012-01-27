@@ -34,8 +34,10 @@ public class BouncingBall extends GraphicsProgram {
 	}
 	
 	private void bounceBall(GOval ball) {
-		double dx = 3;
+		RandomGenerator rgen = RandomGenerator.getInstance();
+		double dx = rgen.nextDouble(1.0, 4.0);
 		double dy = 0;
+		double gravity = rgen.nextDouble(0.3, 2.5);
 		
 		while (ballOnScreen(ball)) {
 			ball.move(dx, dy);
