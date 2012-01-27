@@ -10,7 +10,7 @@ import java.awt.*;
 
 public class SaturnVLaunch extends GraphicsProgram {
 	private static final double ROCKET_WIDTH = 10;
-	private static final double ROCKET_HEIGHT = 300;
+	private static final double ROCKET_HEIGHT = 200;
 	
 	private static final double ROCKET_SPEED = -10;
 	private static final double PAUSE_TIME = 1000.0 / 24;
