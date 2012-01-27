@@ -6,6 +6,7 @@
  */
 import acm.program.*;
 import acm.graphics.*;
+import acm.util.*;
 
 import java.awt.*;
 
@@ -17,6 +18,7 @@ public class SaturnVLaunch extends GraphicsProgram {
 	private static final double PAUSE_TIME = 1000.0 / 24;
 	
 	public void run() {
+		drawBackground();
 		GRect rocket = createRocket();
 		add(rocket);
 		launchRocket(rocket);
@@ -64,5 +66,9 @@ public class SaturnVLaunch extends GraphicsProgram {
 			/* Display the line. */
 			add(line);			
 		}
+	}
+	
+	private void drawBackground() {
+		RandomGenerator rgen = RandomGenerator.getInstance();
 	}
 }
