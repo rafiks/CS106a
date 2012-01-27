@@ -48,7 +48,7 @@ public class BouncingBall extends GraphicsProgram {
 		double dx = 5;
 		double dy = 0;
 		double gravity = 1.0;
-		double elasticity = 0.8;
+		double elasticity = 0.9;
 		
 		displayParameters(gravity, elasticity);
 		
