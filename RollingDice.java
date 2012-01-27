@@ -16,7 +16,7 @@ public class RollingDice extends ConsoleProgram {
 		int roll1 = rgen.nextInt(1, 6);
 		int roll2 = rgen.nextInt(1, 6);
 		
-		/* Print out the result.
+		/* Print out the result. */
 		println("We rolled a " + roll1 + " and a " + roll2 + ".");
 	}
 }
