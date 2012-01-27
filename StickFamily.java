@@ -23,7 +23,12 @@ public class StickFamily extends GraphicsProgram {
 	}
 	
 	private void drawStickHead(double x, double y, double personHeight) {
-		double size = headSize(personSize);
+		double size = headSize(personHeight);
 		add(new GOval(x - size / 2, y, size, size));
+	}
+	
+	private void drawStickBody(double x, double y, double personHeight) {
+		double size = bodySize(personHeight);
+		add(new GOval(x, y + headSize, x, y + size));
 	}
 }
