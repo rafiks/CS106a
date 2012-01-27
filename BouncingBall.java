@@ -35,7 +35,7 @@ public class BouncingBall extends GraphicsProgram {
 	
 	private void bounceBall(GOval ball) {
 		RandomGenerator rgen = RandomGenerator.getInstance();
-		double dx = rgen.nextDouble(1.0, 4.0);
+		double dx = 5;
 		double dy = 0;
 		double gravity = rgen.nextDouble(0.3, 1.5);
 		double elasticity = rgen.nextDouble(-0.5, -1.1);
