@@ -10,7 +10,7 @@ import acm.util.*;
 
 import java.awt.*;
 
-public class SaturnVLaunch extends GraphicsProgram {
+public class BouncingBall extends GraphicsProgram {
 	private static final double BALL_RADIUS = 50;
 	
 	private GOval createBall() {
