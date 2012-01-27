@@ -76,7 +76,7 @@ public class SaturnVLaunch extends GraphicsProgram {
 	}
 	
 	private void drawBackground() {
-		RandomGenerator rgen = new RandomGenerator();
+		RandomGenerator rgen = RandomGenerator.getInstance();
 		for (int i = 0; i < NUM_STARS; i++) {
 			addStar(rgen);
 		}
