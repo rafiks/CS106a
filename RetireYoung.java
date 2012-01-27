@@ -22,7 +22,7 @@ public class RetireYoung extends ConsoleProgram {
 	 * 
 	 * @param money Your initial money.
 	 */
-	private int getRichQuick(int money) {
+	private void getRichQuick(int money) {
 		/* Now I have ten million dollars! */
 		money = 10000000;
 	}
