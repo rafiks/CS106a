@@ -6,7 +6,6 @@
 import acm.program.*;
 
 public class Countdown extends ConsoleProgram {
-
 	/* Number of seconds to count down. */
 	private static final int COUNTDOWN_START = 20;
 	
