@@ -43,11 +43,15 @@ public class SaturnVLaunch extends GraphicsProgram {
 			dy += 1.0;
 			
 			if (ballHitGround(ball)) {
-				//ball.move(0, getHeight() - (ball.getY() + ball.getHeight()));
+				unstickBall(ball);
 				dy *= -0.7;
 			}
 			
 			pause(1000.0 / 24);
 		}
+	}
+	
+	private void unstickBall(GOval ball) {
+		ball.move(0, getHeight() - (ball.getY() + ball.getHeight()));
 	}
 }
