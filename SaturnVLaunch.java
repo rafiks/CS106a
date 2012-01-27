@@ -69,6 +69,6 @@ public class SaturnVLaunch extends GraphicsProgram {
 	}
 	
 	private void drawBackground() {
-		RandomGenerator rgen = RandomGenerator.getInstance();
+		RandomGenerator rgen = RandomGenerator.
 	}
 }
