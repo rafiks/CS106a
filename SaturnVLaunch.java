@@ -19,6 +19,9 @@ public class SaturnVLaunch extends GraphicsProgram {
 	
 	private static final double STAR_RADIUS = 20;
 	
+	private static final int MIN_STAR_POINTS = 5;
+	private static final int MAX_STAR_POINTS = 15;
+	
 	public void run() {
 		drawBackground();
 		GRect rocket = createRocket();
@@ -48,7 +51,7 @@ public class SaturnVLaunch extends GraphicsProgram {
 	
 	private boolean rocketInOrbit(GRect rocket) {
 		return rocket.getY() + rocket.getHeight() < 0;
-	}
+	} / 
 	
 	private void drawStar(double x, double y, double radius, int numPoints) {
 		for (int i = 0; i < numPoints; i++) {
