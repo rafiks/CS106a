@@ -7,8 +7,13 @@ import acm.program.*;
 
 public class Countdown extends ConsoleProgram {
 
+	/* Number of seconds to count down. */
 	private static final int COUNTDOWN_START = 20;
+	
+	/* When guidance becomes internal. */
 	private static final int GUIDANCE_START = 15;
+	
+	/* When the ignition sequence starts. */
 	private static final int IGNITION_START = 9;
 	
 	private static final double ONE_SECOND = 1000;
