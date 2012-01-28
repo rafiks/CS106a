@@ -27,5 +27,11 @@ public class BouncingBall extends GraphicsProgram {
 	
 	private void moveBall(GOval ball) {
 		double dx = INITIAL_SPEED;
+		double dy = 0;
+		
+		while (ballAboveGround(ball)) {
+			ball.move(dx, dy);
+			dy += GRAVITY;
+		}
 	}
 }
