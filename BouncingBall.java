@@ -15,4 +15,8 @@ public class BouncingBall extends GraphicsProgram {
 		add(ball);
 		moveBall(ball);
 	}
+	
+	/* ??? */ createBall() {
+		GOval ball = new GOval(0, 0, 50, 50);
+	}
 }
