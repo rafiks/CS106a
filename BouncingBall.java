@@ -11,7 +11,7 @@ import java.awt.*;
 
 public class BouncingBall extends GraphicsProgram {
 	private static final double INITIAL_SPEED = 5.0;
-	private static final double GRAVITY = 1.0;
+	private static final double GRAVITY = 0.5;
 	private static final double PAUSE_TIME = 1000.0 / 48;
 	
 	public void run() {
