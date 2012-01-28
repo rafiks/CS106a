@@ -32,6 +32,8 @@ public class BouncingBall extends GraphicsProgram {
 		while (ballAboveGround(ball)) {
 			ball.move(dx, dy);
 			dy += GRAVITY;
+			
+			pause(PAUSE_TIME);
 		}
 	}
 }
