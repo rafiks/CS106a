@@ -12,5 +12,7 @@ import java.awt.*;
 public class BouncingBall extends GraphicsProgram {
 	public void run() {
 		GOval ball = createBall();
+		add(ball);
+		moveBall(ball);
 	}
 }
