@@ -38,4 +38,8 @@ public class BouncingBall extends GraphicsProgram {
 			pause(PAUSE_TIME);
 		}
 	}
+	
+	private boolean ballAboveGround(GOval ball) {
+		return ball.getY() < getHeight();
+	}
 }
