@@ -22,4 +22,8 @@ public class BouncingBall extends GraphicsProgram {
 		ball.setColor(Color.BLUE);
 		return ball;
 	}
+	
+	private void moveBall(GOval ball) {
+		
+	}
 }
