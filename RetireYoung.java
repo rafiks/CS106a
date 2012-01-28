@@ -7,9 +7,7 @@ import acm.program.*;
 
 public class RetireYoung extends ConsoleProgram {
 	public void run() {
-		for (int i = 0; i < 10; i++) {
-			println(i);
-			i--;
+		for (int i = 10; i > 0; i--) {
 			println(i);
 		}
 		
