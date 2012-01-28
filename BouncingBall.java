@@ -16,7 +16,7 @@ public class BouncingBall extends GraphicsProgram {
 		moveBall(ball);
 	}
 	
-	/* ??? */ createBall() {
+	private GOval createBall() {
 		GOval ball = new GOval(0, 0, 50, 50);
 		ball.setFilled(true);
 		ball.setColor(Color.BLUE);
