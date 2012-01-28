@@ -10,5 +10,7 @@ import acm.util.*;
 import java.awt.*;
 
 public class BouncingBall extends GraphicsProgram {
-	
+	public void run() {
+		
+	}
 }
