@@ -10,6 +10,8 @@ import acm.util.*;
 import java.awt.*;
 
 public class BouncingBall extends GraphicsProgram {
+	private static final double INITIAL_SPEED = 5.0;
+	
 	public void run() {
 		GOval ball = createBall();
 		add(ball);
@@ -24,6 +26,6 @@ public class BouncingBall extends GraphicsProgram {
 	}
 	
 	private void moveBall(GOval ball) {
-		
+		double dx = INITIAL_SPEED;
 	}
 }
