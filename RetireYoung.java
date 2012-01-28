@@ -11,6 +11,10 @@ public class RetireYoung extends ConsoleProgram {
 			println(i);
 		}
 		
+		for (int i = 0; i < 10; i--) {
+			println(i);
+		}
+		
 		/* Start with only $137 to my name. */
 		int accountBalance = 137;
 		println("I used to have $" + 137);
